@@ -1,0 +1,1348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #010101;
+    padding-bottom: 100px;
+}
+
+/*************************** all header-container CSS is divided into two sections **************************/
+.header-container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-image: url('../assests/header-images/universe.jpg');
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+/******************************** left-section *****************************/
+.header-container .left-side {
+    width: 300px;
+    padding-top: 15px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-side img {
+    /* margin-top: 25px; */
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+.left-side h3 {
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 100px;
+    margin-left: 3px;
+    line-height: 15px;
+}
+
+.left-side h3 .logo-text {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #C51230;
+}
+
+.left-side p {
+    display: inline-block;
+    color: #015CC8;
+    cursor: pointer;
+}
+
+.left-side p:hover {
+    color: #C51230;
+}
+
+
+/******************************* right-section ****************************/
+.header-container .right-side {
+    margin-left: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img {
+    height: 30px;
+}
+
+.right-side .search-icon {
+    background-color: rgb(240, 234, 234);
+    padding: 5px 3px 5px 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.right-side .search-song {
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    background-color: rgb(240, 234, 234);
+    color: grey;
+    border: 1px;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.right-side .voice-search-icon {
+    background-color: rgb(240, 234, 234);
+    padding: 5px;
+    margin-left: -3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.notification {
+    position: relative;
+    background-color: rgb(182, 6, 6);
+    color: white;
+    font-size: 8px;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    top: -10%;
+    left: -2%;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right-side i {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.right-side .profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/***************************  Google font poppins *****************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.h2-headings {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/********************************* CSS for Trending section *********************************/
+.trending {
+  margin-top: 20px;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin-left: 60px;
+}
+
+.trending img {
+  width: 250px;
+  height: 250px;
+  transition: .5s;
+  border-radius: 6px;
+}
+
+.trending img:hover {
+  width: 320px;
+  height: 320px;
+}
+
+.main-layout {
+  width: 950px;
+  margin-left: 50px;
+  padding-top: 50px;
+  color: white;
+}
+
+/********************************** CSS for Latest Release **********************************/
+.latest {
+  color: white;
+  display: grid;
+  margin-left: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.album {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+}
+
+.album img {
+  width: 150px;
+}
+
+.album img:hover {
+  box-shadow: 4px 4px 27px #242020;
+}
+
+.album-details p {
+  width: 150px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.album-stats a {
+  font-size: 12px;
+  color: #3f729b;
+}
+
+.album-stats {
+  font-size: 12px;
+  color: #3f729b;
+}
+
+.album i {
+  position: relative;
+  margin-left: 80px;
+  margin-top: -110px;
+}
+
+.album i:hover .dropdown {
+  display: inline-block;
+}
+
+.dropdown {
+  width: 93px;
+  position: absolute;
+  left: -80px;
+  top: 10px;
+  background-color: rgb(167, 162, 162);
+  display: none;
+  transition: opacity 0.3s;
+  color: black;
+  border-radius: 2px;
+}
+
+.dropdown p {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.dropdown p:hover {
+  background-color: rgb(72, 80, 72);
+}
+
+/********************************** CSS for Popular Artists *******************************/
+.artists {
+  display: flex;
+}
+
+.artists img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin: 5px 8px;
+}
+
+.artists a {
+  text-decoration: none;
+}
+
+.masterArtist {
+  border: none;
+  height: 120px;
+  width: 120px;
+  background-image: url('../assests/artists/sooryagayathri.jpg');
+  background-size: contain;
+  border-radius: 100%;
+  margin: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masterArtist:hover {
+  box-shadow: 1px 1px 17px 2px #242020;
+}
+
+.icon {
+  font-size: 0px;
+}
+
+.masterArtist:hover .icon {
+  font-size: 23px;
+  color: white;
+}
+
+
+/***************************** CSS for General Section ****************************/
+.display-container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.display-container .seeAll {
+  position: absolute;
+  right: 2%;
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  background-color: rgb(17, 15, 15);
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.display:hover {
+  cursor: pointer;
+  background-color: rgb(36, 32, 32);
+  transition: .35s;
+}
+
+.display .display-image {
+  padding: 15px 15px 10px 15px;
+}
+
+.display-container .display img {
+  width: 180px;
+  border-radius: 5px;
+  transition: .35s;
+}
+
+.display-container .display img:hover {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.display p {
+  padding: 0px 15px;
+}
+
+.display .display-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.display .desc {
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: grey;
+}
+
+/***************************** some remaining css specific ******************************/
+.focus-baseline {
+  margin-top: -2px;
+  font-size: 12px;
+  color: #C51230;
+}
+
+/* masterPaly */
+
+/****************** masterPlay means bottom music player - It is divided into two parts  ***********************/
+.masterPlay {
+    height: 50px;
+    width: 65vw;
+    position: fixed;
+    bottom: 1px;
+    left: 150px;
+    border: none;
+    color: white;
+    border-radius: 90px;
+    background-image: url('../assests/moon.jpg');
+    display: flex;
+    align-items: center;
+  }
+  
+  .masterPlay:hover {
+    background: linear-gradient(#212a35, #030c18);
+  }
+  
+  /************************************ left section **************************************/
+  .leftside {
+    width: 250px;
+  }
+  
+  .leftside img {
+    height: 2rem;
+    width: 2.5rem;
+    margin: 12px 7px 7px 34px;
+    border-radius: 2px;
+  }
+  
+  .leftside a {
+    color: grey;
+  }
+  
+  .leftside .plus-button {
+    color: rgb(138, 126, 126);
+    position: relative;
+    bottom: 18px;
+    cursor: pointer;
+  }
+  
+  .leftside .plus-button:hover {
+    color: green;
+  }
+  
+  .song-details {
+    display: inline-block;
+    margin-top: 16px;
+    vertical-align: top;
+    line-height: 14px;
+  
+  }
+  
+  .song-details .song-title {
+    font-size: 13px;
+    display: inline-block;
+  }
+  
+  .song-details .artist-name {
+    font-size: 9px;
+  }
+  
+  /************************************* middle section *****************************************/
+  .middle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .middle img {
+    width: 16px;
+    margin: 0px 10px;
+    transition: .15s;
+  }
+  
+  .middle img:hover {
+    width: 15px;
+    cursor: pointer;
+  }
+  
+  audio {
+    width: 515px;
+    height: 30px;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background: linear-gradient(to right, #8693ab, #bdd4e7);
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    border-radius: 50%;
+    margin-left: -8px;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(48, 113, 134, 0.7);
+  }
+
+  /* responsive */
+
+  @media (max-width:1329px) {
+    .playlist h4 {
+      margin-left: 13%;
+    }
+  }
+  
+  
+  /********************************* 2 media query at 1280px ********************************/
+  @media (max-width:1280px) {
+    .header-container .right-side {
+      margin-left: 370px;
+    }
+  
+    .similar h4 {
+      margin-left: 3%;
+    }
+  
+    .playlist h4 {
+      margin-left: 13%;
+    }
+  }
+  
+  
+  
+  /********************************* One media query at 1222px ********************************/
+  @media (max-width:1222px) {
+    .plus-button {
+      display: none;
+    }
+  
+    .playlist h4 {
+      margin-left: 7%;
+    }
+  }
+  
+  
+  
+  /********************************* 3 media queries at 1191px ********************************/
+  @media (max-width:1191px) {
+    .header-container .right-side {
+      margin-left: 270px;
+    }
+  
+    .masterPlay {
+      left: 0px;
+      width: 96vw;
+    }
+  
+    audio {
+      width: 700px;
+    }
+  }
+  
+  
+  
+  /********************************* 3 media queries at 1000px ********************************/
+  @media (max-width:1000px) {
+    .header-container .right-side {
+      margin-left: 170px;
+    }
+  
+    audio {
+      width: 400px;
+    }
+  
+    .singer-desc {
+      width: 55%;
+      justify-content: center;
+    }
+  }
+  
+  
+  
+  
+  /********************************* 3 media queries at 921px ********************************/
+  @media (max-width:921px) {
+    .trending {
+      width: 760px;
+      height: 250px;
+      margin-left: 26px;
+      justify-content: space-around;
+    }
+  
+    .trending img {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .trending img:hover {
+      width: 240px;
+      height: 240px;
+  
+    }
+  }
+  
+  
+  
+  /********************************* some media queries at 720px ********************************/
+  @media (max-width:720px) and (min-width:502px) {
+  
+  
+    .h2-headings {
+      margin-top: 30px;
+      font-weight: 200;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  
+    .main-layout {
+      margin-left: 10px;
+    }
+  
+    .header-container {
+      height: 35px;
+    }
+  
+    .header-container .right-side {
+      margin-left: -90px;
+    }
+  
+    .trending {
+      width: 640px;
+      height: 250px;
+      margin-left: 26px;
+      justify-content: space-around;
+    }
+  
+    .trending img {
+      width: 190px;
+      height: 190px;
+    }
+  
+    .trending img:hover {
+      width: 220px;
+      height: 220px;
+  
+    }
+  
+    .latest {
+      display: flex;
+      justify-content: space-around;
+      width: 700px;
+      margin-left: 20px;
+    }
+  
+    .album {
+      margin-top: 10px;
+      /* width: 300px; */
+    }
+  
+    .album img {
+      width: 130px;
+    }
+  
+    .album p {
+      display: none;
+    }
+  
+    .album i {
+      display: none;
+    }
+  
+    .artists {
+      flex-wrap: wrap;
+      width: 700px;
+    }
+  
+    .artists img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .masterArtist {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .display-container .seeAll {
+      font-size: 12px;
+      right: 28%;
+      top: -15px;
+    }
+  
+    .display {
+      margin-top: 0px;
+    }
+  
+    .focus-baseline {
+      margin-left: 20px;
+    }
+  
+    .masterPlay {
+      left: 2px;
+      width: 100%;
+    }
+  
+    .leftside {
+      width: 150px;
+      height: 40px;
+      margin-left: 10px;
+    }
+  
+    .song-details {
+      width: 70px;
+    }
+  
+    .leftside img {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+    }
+  
+    .song-details {
+      margin-top: 05px;
+      line-height: 14px;
+    }
+  
+    .song-title {
+      font-size: 8px;
+  
+    }
+  
+    .middle {
+      top: 14px;
+      margin-left: 10px;
+    }
+  
+    audio {
+      width: 400px;
+      height: 25px;
+    }
+  
+    .singer-desc {
+      display: none;
+    }
+  
+    .artist-page button {
+      position: relative;
+      margin-top: -500px;
+    }
+  
+    .artist-page .follow {
+      display: none;
+    }
+  
+    .artist-page .tracks {
+      position: relative;
+      margin-top: -220px;
+    }
+  
+  }
+  
+  
+  
+  /*********************************  media queries at 502px ********************************/
+  @media (max-width:502px) {
+  
+    .h2-headings {
+      margin-top: 30px;
+      font-weight: 200;
+      font-size: 13px;
+      margin-left: 10px;
+    }
+  
+    .header-container {
+      height: 40px;
+    }
+  
+    .header-container .right-side {
+      margin-left: 100px;
+    }
+  
+    .right-side .search-song {
+      width: 50px;
+    }
+  
+    .header-container .left-side {
+      width: 100px;
+      padding-top: 15px;
+    }
+  
+    .left-side h3 {
+      font-size: 8px;
+      font-weight: 400;
+      margin-right: 8px;
+      margin-left: 1px;
+      line-height: 10px;
+    }
+  
+    .left-side h3 .logo-text {
+      font-weight: 400;
+      font-size: 12px;
+      color: #C51230;
+    }
+  
+    .left-side img {
+      width: 40px;
+      border-radius: 50%;
+    }
+  
+    .left-side p {
+      font-size: 8px;
+      margin-left: 30px;
+    }
+  
+    .right-side .search-song {
+      height: 20px;
+      font-size: 8px;
+    }
+  
+    .right-side .search-icon {
+      height: 20px;
+    }
+  
+    .right-side .voice-search-icon {
+      height: 20px;
+    }
+  
+    /* trending */
+    .trending {
+      margin-top: 0px;
+      width: 400px;
+      height: 200px;
+      margin-left: 30px;
+    }
+  
+    .trending img {
+      width: 150px;
+      height: 150px;
+      transition: .35s;
+      border-radius: 6px;
+    }
+  
+    .trending img:hover {
+      width: 180px;
+      height: 180px;
+    }
+  
+    /* main layout */
+    .main-layout {
+      width: 500px;
+      margin-left: 10px;
+    }
+  
+    /* latest release */
+    .latest {
+      display: flex;
+      width: 500px;
+      margin-left: 20px;
+    }
+  
+    .album {
+      margin-top: 10px;
+      width: 100px;
+    }
+  
+    .album img {
+      width: 90px;
+    }
+  
+    .album p {
+      display: none;
+    }
+  
+    .album i {
+      display: none;
+    }
+  
+    /* popular Artists */
+    .artists {
+      flex-wrap: wrap;
+    }
+  
+    .artists img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .masterArtist {
+      height: 70px;
+      width: 70px;
+    }
+  
+  
+    /* general section */
+    .display-container {
+      width: 600px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  
+    .display-container .seeAll {
+      font-size: 8px;
+      right: 20px;
+    }
+  
+    .display {
+      margin-top: 0px;
+      width: 120px;
+      height: 200px;
+    }
+  
+    .display-container .display img {
+      width: 80px;
+    }
+  
+    .display .display-title {
+      font-size: 10px;
+    }
+  
+    .display .desc {
+      font-size: 8px;
+      line-height: 10px;
+    }
+  
+    .focus-baseline {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+  
+  
+    /* masterPlay */
+    .masterPlay {
+      left: 2px;
+      width: 100%;
+    }
+  
+    .leftside {
+      width: 150px;
+      margin-left: 10px;
+    }
+  
+    .song-details {
+      width: 70px;
+    }
+  
+    .leftside img {
+      width: 30px;
+      height: 30px;
+      margin: 10px 5px;
+    }
+  
+    .song-details {
+      line-height: 14px;
+    }
+  
+    .song-title {
+      font-size: 8px;
+  
+    }
+  
+    .plus-button {
+      display: none;
+    }
+  
+    .middle {
+      top: 14px;
+    }
+  
+    audio {
+      width: 200px;
+      height: 25px;
+    }
+  
+  
+    .singer-desc {
+      display: none;
+    }
+  
+    .artist-page button {
+      position: relative;
+      margin-top: -550px;
+      margin-left: 280px;
+    }
+  
+    .artist-page .follow {
+      display: none;
+    }
+  
+    .artist-page .tracks {
+      position: relative;
+      margin-top: -240px;
+      margin-left: 280px;
+    }
+}
+
+/* sidebar */
+
+/**************************** CSS for playlist positioned at right side *****************************/
+.playlist {
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .playlist::-webkit-scrollbar {
+    width: 0px;
+    /* width of the entire scrollbar */
+  }
+  
+  .playlist::-webkit-scrollbar-track {
+    background: black;
+    /* color of the tracking area */
+  }
+  
+  .playlist::-webkit-scrollbar-thumb {
+    background-color: grey;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid black;
+    /* creates padding around scroll thumb */
+  
+  }
+  
+  .playlist {
+    background: linear-gradient(to bottom, #000000 1%, #031c27 100%);
+    color: white;
+    position: fixed;
+    right: 10px;
+    left: 1020px;
+    top: 60px;
+    bottom: 0px;
+    padding-top: 30px;
+    overflow: auto;
+  }
+  
+  .playlist h1 {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .playlist h1, h4 {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .playlist h4 {
+    margin-left: 130px;
+    font-size: 13px;
+  }
+  
+  .playlist select {
+    color: white;
+    background-color: #010203;
+    border-style: none;
+  }
+  
+  .playlist select:hover {
+    cursor: pointer;
+  }
+  
+  .playlist i {
+    color: rgb(59, 53, 53);
+  }
+  
+  .playlist .song-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    transition: .2s;
+  }
+  
+  .song-container:hover {
+    background-color: #01070D;
+    cursor: pointer;
+    color: rgb(172, 32, 8);
+  }
+  
+  .song-container img {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 17px 2px#242020;
+    /* box-shadow: .1px .1px 10px 2px #003148; */
+  }
+  
+  .song-container .index {
+    font-size: 13px;
+    color: grey;
+    padding-left: 10px;
+  }
+  
+  .song-container i {
+    margin-right: 5%;
+  }
+  
+  .song-info {
+    margin-left: 10px;
+    width: 210px;
+  }
+  
+  .song-info p:nth-child(1) {
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+  }
+  
+  .song-info p:nth-child(2) {
+    font-size: 13px;
+    padding-top: 5px;
+    color: grey;
+  }
+
+  /* similiar artists */
+
+  /******************** CSS for similar artist, Playlist in aside section of Single-Artist.html ***********************/
+.playlist, .similar{
+    font-family: 'Comfortaa', cursive;
+  }
+  .playlist::-webkit-scrollbar {
+    width: 0px;    
+  }
+  .similar::-webkit-scrollbar {
+    width: 0px;    
+  }
+  
+  .playlist{
+    background: linear-gradient(to bottom,#000000 1%,#031c27 100%);
+    color: white;
+    position: fixed;
+    right:10px;
+    left: 1020px;
+    top: 350px;
+    bottom:0px;
+    overflow: auto;
+  }
+  .playlist h1{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .playlist h1,h4{
+    display: inline-block;
+    
+    
+  }
+  .playlist h4{
+    margin-left: 45%;
+    color: rgb(9, 58, 122);
+    font-size: 13px;
+  }
+  
+  .playlist h4:hover{
+    color:rgb(172, 32, 8);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .playlist i{
+    color: rgb(59, 53, 53);
+  }
+  .song-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 5px;
+      transition: .2s;
+  }
+  .song-container:hover{
+    background-color: #01070D;
+    cursor: pointer;
+    color:rgb(172, 32, 8);
+  }
+  .song-container img{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 17px 2px#242020;
+  }
+  .song-container .index{
+    font-size: 13px;
+    color: grey;
+    padding-left: 10px;
+  }
+  .song-container i{
+    margin-right: 5%;
+  }
+  .song-info{
+    margin-left: 10px;
+    width: 210px;
+  }
+  .song-info p:nth-child(1){
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+  }
+  .song-info p:nth-child(2){
+    font-size: 13px;
+    padding-top: 5px;
+    color: grey;
+  }
+  
+  
+  /***************************** css for similar Artists *************************************/
+  .similar{
+    color: white;
+    position: fixed;
+    right:10px;
+    left: 1020px;
+    top:100px;
+    bottom:53%;
+    overflow: auto;
+  }
+  .similar h1{
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .similar h1,h4{
+    display: inline-block;
+  }
+  .similar h4{
+    margin-left: 20%;
+    /* margin-right: 10px; */
+    color: rgb(9, 58, 122);
+    font-size: 13px;
+  }
+  .similar h4:hover{
+    color:rgb(172, 32, 8);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  /* singleArtists */
+  /******** Google Font Nunito ********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+
+
+
+/*********************** Main Layout ***************************/
+.layout {
+  height: 1600px;
+  width: 950px;
+  margin-left: 50px;
+  padding-top: 100px;
+  color: white;
+
+}
+
+.artist-page {
+  background: linear-gradient(to bottom right, #0C1027, #000);
+  height: 390px;
+}
+
+.artist-page img {
+  width: 250px;
+  border-radius: 4px;
+
+}
+
+.artist-details {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.singer-name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 50%;
+  display: inline-block;
+
+
+}
+
+.followers {
+  font-size: 12px;
+  color: grey;
+}
+
+.singer-desc {
+  width: 70%;
+  margin-left: 275px;
+  color: rgb(228, 229, 235);
+  font-size: 15px;
+  letter-spacing: .5px;
+  line-height: 23px;
+  text-align: left;
+  margin-top: -320px;
+  vertical-align: top;
+  margin-bottom: 100px;
+
+}
+
+.artist-page button {
+  margin-left: 300px;
+  vertical-align: middle;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  border-style: none;
+  cursor: pointer;
+  ;
+  transition: .15s;
+  background: linear-gradient(to right, #3524AF, #B845DB);
+
+}
+
+.artist-page button:hover {
+  color: white;
+}
+
+.artist-page .follow {
+  margin-left: 50px;
+  border: 1px solid black;
+
+}
+
+.artist-page .follow:hover {
+  color: #C51230;
+  cursor: pointer;
+
+}
+
+.tracks {
+  margin-left: 32%;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+
+
+/***************************** css for songs container ***********************************/
+.songs-container {
+  padding-top: 30px;
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.songs:hover {
+  background-color: #0a121a;
+  transition: .3s linear;
+}
+
+.songs .index {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.songs img {
+  width: 80px;
+  height: 60px;
+}
+
+.songs .name {
+  margin-left: 2%;
+  width: 40%;
+  font-size: 16px;
+}
+
+.songs .artist {
+  margin-left: 10%;
+  font-size: 15px;
+
+  width: 20%;
+}
+
+.songs i {
+  margin-left: 3%;
+}
+  
+  
+  
+  
